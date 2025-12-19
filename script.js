@@ -35,4 +35,56 @@ const dateTime = () => {
   }
 };
 
-setInterval(dateTime, 1000)
+setInterval(dateTime, 1000);
+
+//Validation
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  document.addEventListener("submit", (e) => {
+    e.preventDefault(); // form defalut
+    const inputName = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    let isValid = true;
+    let errorMessage = "";
+
+    if (inputName === "") {
+      isValid = false;
+      errorMessage = errorMessage + "Name is required.\n"; 
+    }
+
+    if (email === "") {
+      isValid = false;
+      errorMessage = errorMessage + "Email Is Required. \n";
+    }
+
+    if (email) {
+      const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const validPattern = pattern.test(email);
+      if (!validPattern) {
+        errorMessage += "Please enter a valid email address.\n";
+        isValid = false;
+      }
+    }
+
+    if (address === "") {
+      errorMessage += "Address is required.\n";
+      isValid = false;
+    }
+
+    if (message === "") {
+      errorMessage += "Message cannot be empty.\n";
+      isValid = false;
+    }
+
+    if (isValid) {
+      alert("Form Submitted Successfully!");
+      contactForm.reset();
+    } else {
+      alert(errorMessage);
+    }
+  });
+}
