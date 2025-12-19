@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--Header Section-->
+    <header>
+      <!--Navbar Section-->
+      <nav class="fixed t-0 l-0 r-0 z-50 transition-all duration-300 w-full">
+        <div
+          id="sticky"
+          class="navbar bg-violet-100 shadow-sm container mx-auto"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-blue-200 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li>
+                  <a href="./gallary-and-project.html">Gallery</a>
+                </li>
+                <li><a href="./donation-and-join.html">Donation</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <a class="w-16"
+              ><img src="./image/logo.png" height="100%" width="100x"
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <a href="./gallary-and-project.html">Gallery</a>
+              </li>
+              <li><a href="./donation-and-join.html">Donation</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href="./contact.html" id="button" class="btn btn-primary"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!--Gallery Title Section-->
+      <section>
+        <div class="container mx-auto">
+          <div
+            class="hero min-h-[500px]"
+            style="background-image: url(./image/gallery.jpg)"
+          >
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">
+                  Welcome <span class="text-teal-300">Gallery</span>
+                </h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="container mx-auto">
+      <!--Grid Gallery-->
+      <section>
+        <div class="bg-violet-50 py-7">
+          <h1 class="text-4xl font-bold text-center py-7">Photo Gallery</h1>
+          <div
+            class="grid grid-flow-dense grid-cols-6 gap-4 p-10 w-[95%] mx-auto bg-white"
+          >
+            <div class="max-h-[200px]">
+              <img
+                class="object-cover"
+                src="./image/gallery-1.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div class="col-span-2">
+              <img
+                class="object-cover"
+                src="./image/gallery-2.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+
+            <div>
+              <img
+                class="object-cover"
+                src="./image/gallery-5.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div class="row-span-2">
+              <img
+                class="object-cover"
+                src="./image/gallery-6.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div>
+              <img
+                class="object-cover"
+                src="./image/gallery-7.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div class="row-span-3">
+              <img
+                class="object-cover"
+                src="./image/gallery-4.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div>
+              <img
+                class="object-cover"
+                src="./image/gallery-8.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div class="row-span-2 col-span-2">
+              <img
+                class="object-cover"
+                src="./image/gallery-9.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div>
+              <img
+                class="object-cover"
+                src="./image/gallery-10.jpeg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+
+            <div>
+              <img
+                class="object-cover"
+                src="./image/gallery-12.avif"
+                height="100%"
+                width="100%"
+              />
+            </div>
+            <div class="col-span-2">
+              <img
+                class="object-cover"
+                src="./image/gallery-11.jpg"
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Before & After Section-->
+      <section>
+        <div class="bg-violet-50 py-7">
+          <h1 class="text-4xl font-bold text-center py-7">Before & After</h1>
+          <div class="w-[95%] mx-auto">
+            <figure class="diff aspect-16/9" tabindex="0">
+              <div class="diff-item-1" role="img" tabindex="0">
+                <img src="./image/after.jpg" />
+              </div>
+              <div class="diff-item-2" role="img">
+                <img src="./image/before.png" />
+              </div>
+              <div class="diff-resizer"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!--Video Section-->
+      <section>
+        <div class="bg-violet-50 py-7">
+          <h1 class="text-4xl font-bold text-center py-7">Our Working Video</h1>
+          <div
+            class="max-w-[95%] grid grid-cols-1 gap-5 p-7 lg:grid-cols-3 place-items-center mx-auto"
+          >
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/ELVJ-MVWItc?si=LT3CIdDlzD4ae379"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/xgSv6_TsYKo?si=R16WoEZSDrLr1Hjr"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/DAdIlcV8Tg8?si=VvfE4gmQ4LwJbX3-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/xgSv6_TsYKo?si=R16WoEZSDrLr1Hjr"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/DAdIlcV8Tg8?si=VvfE4gmQ4LwJbX3-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/ELVJ-MVWItc?si=LT3CIdDlzD4ae379"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer Section-->
+    <footer
+      class="footer footer-horizontal footer-center bg-teal-600 text-base-content rounded p-10 container mx-auto"
+    >
+      <!--"Newsletter Subscription"-->
+
+      <div class="bg-blue-200 w-[90%] lg:w-[60%] rounded-lg p-8 shadow-xl">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left"
+        >
+          <div class="text-black">
+            <h1 class="text-2xl md:text-3xl font-bold">
+              Subscribe to our Newsletter
+            </h1>
+            <p class="text-sm mt-2 opacity-90">
+              Get latest updates and offers directly in your inbox
+            </p>
+          </div>
+          <div class="join">
+            <input
+              type="email"
+              placeholder="mail@site.com"
+              class="input input-bordered join-item"
+              required
+            />
+            <button class="btn btn-neutral join-item">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer start-->
+      <nav class="grid grid-flow-col gap-4 text-white">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4 text-3xl">
+          <a href="https://x.com/" target="_blank" class="hover:text-white"
+            ><i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://telegram.org/"
+            target="_blank"
+            class="hover:text-white"
+            ><i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <p class="text-white">Copyright © 2025 - All right reserved</p>
+        <p class="font-bold text-white">
+          Current Time: <span id="date-time"></span>
+        </p>
+      </aside>
+    </footer>
+  </body>
+</html>
