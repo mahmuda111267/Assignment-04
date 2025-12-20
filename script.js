@@ -43,17 +43,12 @@ const regiForm = document.getElementById("registration");
 if (regiForm) {
   document.addEventListener("submit", (e) => {
     e.preventDefault(); // form defalut
-    const userName = document.getElementById("user").value.trim();
     const email = document.getElementById("email").value.trim();
-    const address = document.getElementById("password").value.trim();
+    const password = document.getElementById("password").value.trim();
+   
 
     let isValid = true;
     let errorMessage = "";
-
-    if (userName === "") {
-      isValid = false;
-      errorMessage = errorMessage + "User name is required.\n";
-    }
 
     if (email === "") {
       isValid = false;
